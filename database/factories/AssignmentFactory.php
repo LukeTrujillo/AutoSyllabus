@@ -22,7 +22,9 @@ class ModelFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->sentence(6),
+            'description' => $this->fake->text(),
+            'link' => "https://".$this->faker->word().".com"
         ];
     }
 }
